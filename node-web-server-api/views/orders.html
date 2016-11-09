@@ -1,0 +1,19 @@
+<h1>Orders</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>User ID</th>
+    <th>Item ID</th>
+    <th>Quantity</th>
+    <th>Ordered At</th>
+  </tr>
+{% for orders in orders %}
+  <tr>
+    <td>{{ orders.id }}</td>
+    <td>{{ orders.user_id }}</td>
+    <td>{{ orders.item_id }}</td>
+    <td>{{ orders.quantity }}</td>
+    <td>{{ orders.created_at }}</td>
+  </tr>
+  {% endfor %}
+</table>
